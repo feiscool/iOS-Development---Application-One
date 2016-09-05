@@ -17,32 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhK-MO-erD">
-                                <rect key="frame" x="270" y="515" width="60" height="30"/>
-                                <state key="normal" title="Roll Tide"/>
-                                <connections>
-                                    <action selector="AlabamaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR8-Li-hPJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhd-Fa-a30">
-                                <rect key="frame" x="285" y="456" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhd-Fa-a30">
+                                <rect key="frame" x="285" y="416" width="30" height="30"/>
                                 <state key="normal" title="SEC"/>
                                 <connections>
                                     <action selector="SECButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UyE-1b-qeK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjH-b5-PpO">
-                                <rect key="frame" x="266" y="398" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjH-b5-PpO">
+                                <rect key="frame" x="266" y="378" width="69" height="30"/>
                                 <state key="normal" title="War Eagle"/>
                                 <connections>
                                     <action selector="AuburnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rkU-B1-wE4"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SEC" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-eD-ItJ">
-                                <rect key="frame" x="150" y="28" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SEC" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-eD-ItJ">
+                                <rect key="frame" x="150" y="70" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="QiO-2J-MCZ"/>
+                                    <constraint firstAttribute="height" constant="300" id="WVZ-NU-1AD"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhK-MO-erD">
+                                <rect key="frame" x="270" y="454" width="60" height="30"/>
+                                <state key="normal" title="Roll Tide"/>
+                                <connections>
+                                    <action selector="AlabamaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR8-Li-hPJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qjH-b5-PpO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="76z-zj-XQS"/>
+                            <constraint firstItem="ZhK-MO-erD" firstAttribute="top" secondItem="xhd-Fa-a30" secondAttribute="bottom" constant="8" id="9YY-XV-aGs"/>
+                            <constraint firstItem="Lj8-eD-ItJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ASC-UA-W1b"/>
+                            <constraint firstItem="Lj8-eD-ItJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="ASp-e2-6OI"/>
+                            <constraint firstItem="xhd-Fa-a30" firstAttribute="top" secondItem="qjH-b5-PpO" secondAttribute="bottom" constant="8" id="NZs-JK-fzd"/>
+                            <constraint firstItem="Lj8-eD-ItJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YZG-UP-gnW"/>
+                            <constraint firstItem="xhd-Fa-a30" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fWw-bT-Hqg"/>
+                            <constraint firstItem="qjH-b5-PpO" firstAttribute="top" secondItem="Lj8-eD-ItJ" secondAttribute="bottom" constant="8" id="idy-KE-l9J"/>
+                            <constraint firstItem="ZhK-MO-erD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u1n-0A-gMO"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ImageViewer" destination="Lj8-eD-ItJ" id="Scg-0I-cec"/>
