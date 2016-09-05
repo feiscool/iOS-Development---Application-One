@@ -38,17 +38,14 @@
                                     <action selector="AuburnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rkU-B1-wE4"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-eD-ItJ">
-                                <rect key="frame" x="150" y="45" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SEC" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-eD-ItJ">
+                                <rect key="frame" x="150" y="28" width="300" height="300"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="AlabamaButton" destination="ZhK-MO-erD" id="abg-pp-KNj"/>
-                        <outlet property="AuburnButton" destination="qjH-b5-PpO" id="Hsb-jQ-Ic9"/>
                         <outlet property="ImageViewer" destination="Lj8-eD-ItJ" id="Scg-0I-cec"/>
-                        <outlet property="SECButton" destination="xhd-Fa-a30" id="EWi-D4-rf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,4 +53,7 @@
             <point key="canvasLocation" x="245" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SEC" width="655" height="623"/>
+    </resources>
 </document>

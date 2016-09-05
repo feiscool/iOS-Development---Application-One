@@ -18,12 +18,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var ImageViewer: UIImageView!
     
     @IBAction func AuburnButton(sender: UIButton) {
+        ImageViewer.image = UIImage(named: "Auburn")
     }
     
     @IBAction func SECButton(sender: UIButton) {
+        ImageViewer.image = UIImage(named: "SEC")
     }
     
     @IBAction func AlabamaButton(sender: UIButton) {
+        ImageViewer.image = UIImage(named: "Alabama")
     }
 }
 
